@@ -1,0 +1,13 @@
+<div>
+    <table class="table table-striped">
+        <tr>
+                <th>Name</th>
+                <th>Action</th>
+
+        </tr>
+        <tr ng-repeat="book in books">
+                <td>{{ book.name }}</td>
+                <td><a href="#/new_or_edit/{{book.id}}/{{book.name}}" class="btn btn-default">edit</a></td>
+        </tr>
+    </table>
+ </div>   
